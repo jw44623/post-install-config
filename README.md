@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+<h1>osTicket - Post-Installation Configuration</h1>
+This tutorial outlines the post-installation configuration of the open-source help desk ticketing system osTicket.<br />
 
 
 
@@ -12,7 +12,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
+- osTicket
 
 <h2>Operating Systems Used </h2>
 
@@ -20,25 +20,77 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Create a Resource Group
-  ![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/26bbae34-e7b8-4772-a552-b7d205161ded)
-
-- Create a Windows 10 Virtual Machine (VM) with 2 Virtual CPUs and a Linux (Ubuntu 20.04) Virtual Machine with 2 Virtual CPUs
-  ![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/e39dda9e-885a-4774-82cb-50b96cf8eb77)
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/d170dd36-d539-4a25-a15d-9d9237e708da)
+- osTicket installed
 
 
 <h2>Installation Steps</h2>
 
+Configure Roles
+- Select Admin Panel
 
-Install / Enable IIS in Windows WITH
-CGI and Common HTTP Features
+![image](https://github.com/jw44623/post-install-config/assets/150184762/40293e9b-52e2-44bd-bcd8-96a9ebf7b383)
 
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/23280825-972b-4f9d-9416-98c0ac168623)
-</p>
-<br />
+- Select Agents
 
-Download and install PHP Manager for IIS and the Rewrite Module
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/7f651181-1c3b-43a7-a534-83a173cd2bb8)
+![image](https://github.com/jw44623/post-install-config/assets/150184762/fabb4365-6e50-4f61-a17e-c6e0308cfeba)
 
-Create the directory C:\PHP
+  
+- Select Roles
+
+![image](https://github.com/jw44623/post-install-config/assets/150184762/04f264bd-99f8-4df0-be0e-1b548cafc8b4)
+
+  
+- Add a New Role
+
+  ![image](https://github.com/jw44623/post-install-config/assets/150184762/f18a0791-0f59-422f-8760-bfc1ac7542be)
+
+  Configure Departments
+- Select Admin Panel
+- Select Agents
+- Select Departments
+
+![image](https://github.com/jw44623/post-install-config/assets/150184762/99aff038-2ff9-453b-a178-7c421c291400)
+
+Configure Teams
+- Select Admin Panel
+- Agents
+- Teams
+
+![image](https://github.com/jw44623/post-install-config/assets/150184762/b7ae4de8-43db-4385-a368-9e1c2ebebf92)
+
+- Select Admin Panel 
+- Select Settings
+- Select User
+- Select Registration Required: Require registration and login to create tickets 
+
+![image](https://github.com/jw44623/post-install-config/assets/150184762/899970a5-fc3a-44dc-8d7e-dccfb373c365)
+
+Configure Agents
+- Seleect Admin Panel
+- Select Agents
+- Select Add New
+
+![image](https://github.com/jw44623/post-install-config/assets/150184762/71c69334-fcac-43a4-bc52-7b790d3c8601)
+
+Configure Users
+- Select Agent Panel
+- Select Users
+- Add New
+
+![image](https://github.com/jw44623/post-install-config/assets/150184762/49aad801-c5e1-49c8-84a4-d9b618c5bf02)
+
+Configure SLA
+- Select Admin Panel
+- Select Manage
+- Select SLA
+
+![image](https://github.com/jw44623/post-install-config/assets/150184762/f304aef1-1f7e-4440-a824-d46fe7d9a590)
+
+Configure Help Topics
+Select Admin Panel 
+- Select Manage
+- Select Help Topics
+
+![image](https://github.com/jw44623/post-install-config/assets/150184762/5b9d90f7-15ad-4ce2-bbdb-6b3abfc39624)
+
+These are just some of the basics of the services that osTicket can provide.
